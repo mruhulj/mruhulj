@@ -115,7 +115,7 @@
 />
 ```
 
-```aura width=860 height=240
+```aura width=860 height=310
 (function() {
  var DEVICON = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/';
  var categories = [
@@ -154,7 +154,7 @@
        #tso2 { animation: ts-orb2 13s ease-in-out infinite 1s; }
      `}</style>
 
-     <svg width="860" height="240" style={{ position: 'absolute', top: 0, left: 0 }}>
+     <svg width="860" height="310" style={{ position: 'absolute', top: 0, left: 0 }}>
        <defs>
          <radialGradient id="tsg1" cx="50%" cy="50%" r="50%">
            <stop offset="0%" stopColor="rgba(139,92,246,0.30)" />
@@ -165,7 +165,7 @@
            <stop offset="100%" stopColor="rgba(236,72,153,0)" />
          </radialGradient>
        </defs>
-       <ellipse id="tso1" cx="120" cy="220" rx="220" ry="170" fill="url(#tsg1)" />
+       <ellipse id="tso1" cx="120" cy="290" rx="220" ry="170" fill="url(#tsg1)" />
        <ellipse id="tso2" cx="760" cy="30" rx="200" ry="160" fill="url(#tsg2)" />
      </svg>
 
@@ -256,7 +256,7 @@
 </div>
 ```
 
-```aura width=860 height=270
+```aura width=860 height=390
 <div style={{
   width: '100%', height: '100%', background: '#0a0a12',
   display: 'flex', flexDirection: 'column', alignItems: 'center',
@@ -271,7 +271,7 @@
     #aco2 { animation: ac-orb2 12s ease-in-out infinite 1s; }
   `}</style>
 
-  <svg width="860" height="270" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="390" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
       <radialGradient id="acg1" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stopColor="rgba(236,72,153,0.22)" />
@@ -282,7 +282,7 @@
         <stop offset="100%" stopColor="rgba(139,92,246,0)" />
       </radialGradient>
     </defs>
-    <ellipse id="aco1" cx="90" cy="230" rx="220" ry="170" fill="url(#acg1)" />
+    <ellipse id="aco1" cx="90" cy="340" rx="220" ry="170" fill="url(#acg1)" />
     <ellipse id="aco2" cx="770" cy="40" rx="200" ry="160" fill="url(#acg2)" />
   </svg>
 
@@ -318,7 +318,7 @@
 </div>
 ```
 
-```aura width=860 height=290
+```aura width=860 height=420
 <div style={{
   width: '100%', height: '100%', background: '#0a0a12',
   display: 'flex', flexDirection: 'column', alignItems: 'center',
@@ -333,7 +333,7 @@
     #pjo2 { animation: pj-orb2 13s ease-in-out infinite 1s; }
   `}</style>
 
-  <svg width="860" height="290" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="420" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
       <radialGradient id="pjg1" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stopColor="rgba(96,165,250,0.22)" />
@@ -344,7 +344,7 @@
         <stop offset="100%" stopColor="rgba(139,92,246,0)" />
       </radialGradient>
     </defs>
-    <ellipse id="pjo1" cx="100" cy="250" rx="220" ry="180" fill="url(#pjg1)" />
+    <ellipse id="pjo1" cx="100" cy="380" rx="220" ry="180" fill="url(#pjg1)" />
     <ellipse id="pjo2" cx="760" cy="40" rx="200" ry="160" fill="url(#pjg2)" />
   </svg>
 
