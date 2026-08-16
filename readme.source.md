@@ -121,6 +121,7 @@
  var categories = [
    { title: 'Design', color: '#f472b6', items: [
      { name: 'Figma', icon: DEVICON + 'figma/figma-original.svg' },
+     { name: 'Framer', icon: 'https://cdn.simpleicons.org/framer/ffffff' },
      { name: 'Canva', icon: DEVICON + 'canva/canva-original.svg' },
    ]},
    { title: 'Mobile & Web', color: '#a78bfa', items: [
