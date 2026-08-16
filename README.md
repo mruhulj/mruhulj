@@ -3,7 +3,7 @@
 
 <p align="center">
 UI/UX Designer with an Informatics background — I design user-centered products and can build them too.<br/>
-Multiple international & national UI/UX competition winner. Currently applying to Apple Developer Academy Cohort 2027.
+Multiple international.
 </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mruhulj" alt="mruhulj" /></a> </p>
