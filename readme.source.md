@@ -1,128 +1,71 @@
-```aura width=860 height=200
- <div style={{
- width: '100%', height: '100%', background: '#08080c',
- display: 'flex', alignItems: 'center', fontFamily: 'Inter',
- position: 'relative', overflow: 'hidden', borderRadius: 16,
- border: '1px solid rgba(110,80,220,0.18)'
+```aura width=860 height=220
+<div style={{
+  width: '100%', height: '100%', background: '#0a0a12',
+  display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+  fontFamily: 'Inter, sans-serif', position: 'relative', overflow: 'hidden',
+  borderRadius: 20, border: '1px solid rgba(168,85,247,0.14)'
 }}>
 
- <style>
-   {`
-     @keyframes float-slow {
-       0%, 100% { transform: translateX(0px); opacity: 0.8; }
-       50% { transform: translateX(350px); opacity: 1.2; }
-     }
-     @keyframes float-medium {
-       0%, 100% { transform: translateX(0px); opacity: 0.7; }
-       50% { transform: translateX(-250px); opacity: 1.1; }
-     }
-     @keyframes float-fast {
-       0%, 100% { transform: translateX(0px); opacity: 0.9; }
-       50% { transform: translateX(200px); opacity: 0.6; }
-     }
-     @keyframes float-diagonal {
-       0%, 100% { transform: translateX(0px); opacity: 0.75; }
-       50% { transform: translateX(300px); opacity: 1.0; }
-     }
-     @keyframes float-wave {
-       0%, 100% { transform: translateX(0px); opacity: 0.65; }
-       33% { transform: translateX(-160px); opacity: 0.9; }
-       66% { transform: translateX(80px); opacity: 1.0; }
-     }
-     @keyframes float-pulse {
-       0%, 100% { transform: scale(1); opacity: 0.8; }
-       50% { transform: scale(1.3); opacity: 0.4; }
-     }
-     #glow-1 { animation: float-slow 8s ease-in-out infinite; }
-     #glow-2 { animation: float-medium 12s ease-in-out infinite; }
-     #glow-3 { animation: float-fast 9s ease-in-out infinite; }
-     #glow-4 { animation: float-slow 11s ease-in-out infinite reverse; }
-     #glow-5 { animation: float-medium 14s ease-in-out infinite reverse; }
-     #glow-6 { animation: float-diagonal 10s ease-in-out infinite; }
-     #glow-7 { animation: float-wave 13s ease-in-out infinite; }
-     #glow-8 { animation: float-pulse 7s ease-in-out infinite; }
-   `}
- </style>
+  <style>{`
+    @keyframes h-orb1 { 0%, 100% { transform: translate(0,0); opacity: 0.55; } 50% { transform: translate(35px,-25px); opacity: 0.85; } }
+    @keyframes h-orb2 { 0%, 100% { transform: translate(0,0); opacity: 0.45; } 50% { transform: translate(-30px,20px); opacity: 0.75; } }
+    @keyframes h-orb3 { 0%, 100% { transform: translate(0,0); opacity: 0.4; } 50% { transform: translate(20px,-15px); opacity: 0.65; } }
+    #ho1 { animation: h-orb1 9s ease-in-out infinite; }
+    #ho2 { animation: h-orb2 12s ease-in-out infinite 0.6s; }
+    #ho3 { animation: h-orb3 10s ease-in-out infinite 1.4s; }
+  `}</style>
 
- <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
-   <defs>
-     <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-       <stop offset="0%" stopColor="rgba(110,20,210,0.72)" />
-       <stop offset="40%" stopColor="rgba(90,15,180,0.35)" />
-       <stop offset="70%" stopColor="rgba(90,15,180,0)" />
-     </radialGradient>
-     <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-       <stop offset="0%" stopColor="rgba(40,60,255,0.6)" />
-       <stop offset="45%" stopColor="rgba(30,50,200,0.25)" />
-       <stop offset="70%" stopColor="rgba(30,50,200,0)" />
-     </radialGradient>
-     <radialGradient id="g3" cx="50%" cy="50%" r="50%">
-       <stop offset="0%" stopColor="rgba(0,130,255,0.45)" />
-       <stop offset="50%" stopColor="rgba(0,100,220,0.18)" />
-       <stop offset="70%" stopColor="rgba(0,100,220,0)" />
-     </radialGradient>
-     <radialGradient id="g4" cx="50%" cy="50%" r="50%">
-       <stop offset="0%" stopColor="rgba(0,190,230,0.32)" />
-       <stop offset="70%" stopColor="rgba(0,190,230,0)" />
-     </radialGradient>
-     <radialGradient id="g5" cx="50%" cy="50%" r="50%">
-       <stop offset="0%" stopColor="rgba(90,30,200,0.38)" />
-       <stop offset="70%" stopColor="rgba(90,30,200,0)" />
-     </radialGradient>
-     <radialGradient id="g6" cx="50%" cy="50%" r="50%">
-       <stop offset="0%" stopColor="rgba(160,30,255,0.55)" />
-       <stop offset="45%" stopColor="rgba(130,20,220,0.22)" />
-       <stop offset="70%" stopColor="rgba(130,20,220,0)" />
-     </radialGradient>
-     <radialGradient id="g7" cx="50%" cy="50%" r="50%">
-       <stop offset="0%" stopColor="rgba(20,60,255,0.42)" />
-       <stop offset="50%" stopColor="rgba(10,40,200,0.16)" />
-       <stop offset="70%" stopColor="rgba(10,40,200,0)" />
-     </radialGradient>
-     <radialGradient id="g8" cx="50%" cy="50%" r="50%">
-       <stop offset="0%" stopColor="rgba(0,170,255,0.40)" />
-       <stop offset="50%" stopColor="rgba(0,130,220,0.15)" />
-       <stop offset="70%" stopColor="rgba(0,130,220,0)" />
-     </radialGradient>
-   </defs>
+  <svg width="860" height="220" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="hg1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(236,72,153,0.42)" />
+        <stop offset="60%" stopColor="rgba(236,72,153,0.10)" />
+        <stop offset="100%" stopColor="rgba(236,72,153,0)" />
+      </radialGradient>
+      <radialGradient id="hg2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(139,92,246,0.48)" />
+        <stop offset="55%" stopColor="rgba(139,92,246,0.14)" />
+        <stop offset="100%" stopColor="rgba(139,92,246,0)" />
+      </radialGradient>
+      <radialGradient id="hg3" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(96,165,250,0.35)" />
+        <stop offset="100%" stopColor="rgba(96,165,250,0)" />
+      </radialGradient>
+    </defs>
+    <ellipse id="ho1" cx="120" cy="190" rx="260" ry="180" fill="url(#hg1)" />
+    <ellipse id="ho2" cx="740" cy="40" rx="240" ry="180" fill="url(#hg2)" />
+    <ellipse id="ho3" cx="480" cy="200" rx="200" ry="140" fill="url(#hg3)" />
+  </svg>
 
-   <ellipse id="glow-1" cx="180" cy="230" rx="260" ry="190" fill="url(#g1)" />
-   <ellipse id="glow-2" cx="300" cy="240" rx="220" ry="160" fill="url(#g2)" />
-   <ellipse id="glow-3" cx="420" cy="240" rx="180" ry="140" fill="url(#g3)" />
-   <ellipse id="glow-4" cx="550" cy="250" rx="150" ry="120" fill="url(#g4)" />
-   <ellipse id="glow-5" cx="750" cy="250" rx="130" ry="110" fill="url(#g5)" />
-   <ellipse id="glow-6" cx="300" cy="240" rx="180" ry="140" fill="url(#g6)" />
-   <ellipse id="glow-7" cx="490" cy="230" rx="220" ry="170" fill="url(#g7)" />
-   <ellipse id="glow-8" cx="590" cy="250" rx="150" ry="130" fill="url(#g8)" />
- </svg>
+  <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 10 }}>
+    <span style={{
+      fontSize: 12, letterSpacing: 5, textTransform: 'uppercase',
+      color: 'rgba(216,180,254,0.75)', fontWeight: 600, marginBottom: 16
+    }}>UI/UX Designer · Developer</span>
 
- <div style={{
-   position: 'absolute', left: 48, top: 52, width: 96, height: 96,
-   borderRadius: 48, background: 'linear-gradient(135deg, #6622ee, #0088ff)',
-   display: 'flex', alignItems: 'center', justifyContent: 'center',
- }}>
-   <img src={(github && github.user && github.user.avatarUrl) || 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'} width={88} height={88} style={{ borderRadius: 44 }} />
- </div>
+    <div style={{ display: 'flex', fontSize: 44, fontWeight: 400, letterSpacing: -1, lineHeight: 1, color: '#ffffff' }}>
+      <span style={{ display: 'flex' }}>Muhammad&nbsp;</span>
+      <span style={{ display: 'flex', fontWeight: 800 }}>Ruhul</span>
+      <span style={{ display: 'flex' }}>&nbsp;Jadid</span>
+    </div>
 
- <div style={{ display:'flex', flexDirection:'column', marginLeft:168, gap:8, zIndex: 10 }}>
-   <div style={{ display:'flex', fontSize:38, fontWeight:800, color:'#ffffff', letterSpacing:'-1px', lineHeight:1 }}>
-     {(github && github.user && (github.user.name || github.user.login)) || 'GitHub Developer'}
-   </div>
-   <div style={{ display:'flex', fontSize:15, color:'rgba(180,165,255,0.8)', fontWeight:400, letterSpacing:'0.3px' }}>
-     UI/UX Designer · Full-Stack Developer · Cloud
-   </div>
-   <div style={{ display:'flex', gap:8, marginTop:6 }}>
-     {['UI/UX Design', 'Figma', 'Flutter', 'Cloud'].map(function(tag) {
-       return (
-         <div key={tag} style={{
-           display:'flex', padding:'4px 12px', borderRadius:20,
-           background:'rgba(80,40,220,0.18)', border:'1px solid rgba(100,70,240,0.32)',
-           color:'rgba(205,195,255,0.85)', fontSize:12, fontWeight:600,
-         }}>{tag}</div>
-       );
-     })}
-   </div>
- </div>
+    <span style={{ fontSize: 16, color: 'rgba(230,225,255,0.75)', fontWeight: 400, marginTop: 14 }}>
+      Designing user-centered products — and building the ones I design
+    </span>
+
+    <div style={{ display: 'flex', gap: 10, marginTop: 22, flexWrap: 'wrap', justifyContent: 'center' }}>
+      {['UI/UX Design', 'Figma', 'Flutter', 'Cloud'].map(function(tag, i) {
+        return (
+          <span key={i} style={{
+            padding: '6px 16px', borderRadius: 100,
+            background: 'rgba(168,85,247,0.10)',
+            border: '1px solid rgba(168,85,247,0.28)',
+            color: 'rgba(230,220,255,0.85)', fontSize: 13, fontWeight: 600, letterSpacing: 0.3
+          }}>{tag}</span>
+        );
+      })}
+    </div>
+  </div>
 </div>
 ```
 
@@ -130,7 +73,7 @@
 <SocialMediaButton
   icon="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
   text="LinkedIn"
-  backgroundColor="#0d0d14"
+  backgroundColor="#0a0a12"
   width={190}
   height={52}
   gradientStops={[
@@ -145,7 +88,7 @@
 <SocialMediaButton
   icon="https://cdn.simpleicons.org/carrd/ffffff"
   text="Portfolio"
-  backgroundColor="#0d0d14"
+  backgroundColor="#0a0a12"
   width={190}
   height={52}
   gradientStops={[
@@ -160,7 +103,7 @@
 <SocialMediaButton
   icon="https://cdn.simpleicons.org/gmail/ffffff"
   text="Email"
-  backgroundColor="#0d0d14"
+  backgroundColor="#0a0a12"
   width={190}
   height={52}
   gradientStops={[
@@ -172,115 +115,7 @@
 />
 ```
 
-```aura width=860 height=140
-(function() {
- var stats = [
-   { label: 'Repos', value: String((github && github.stats && github.stats.totalRepos) || 0), color: '#a78bfa' },
-   { label: 'Stars', value: String((github && github.stats && github.stats.totalStars) || 0), color: '#60a5fa' },
-   { label: 'Commits', value: String((github && github.stats && github.stats.totalCommits) || 0), color: '#f59e0b' },
- ];
-
- return (
-   <div style={{
-     width: '100%', height: '100%',
-     background: '#08080c',
-     display: 'flex', alignItems: 'center', justifyContent: 'center',
-     fontFamily: 'Inter', borderRadius: 16,
-     border: '1px solid rgba(110,80,220,0.18)',
-     position: 'relative', overflow: 'hidden',
-   }}>
-
-     <style>
-       {`
-         @keyframes float-slow {
-           0%, 100% { transform: translateX(0px); opacity: 0.8; }
-           50% { transform: translateX(350px); opacity: 1.2; }
-         }
-         @keyframes float-medium {
-           0%, 100% { transform: translateX(0px); opacity: 0.7; }
-           50% { transform: translateX(-250px); opacity: 1.1; }
-         }
-         @keyframes float-fast {
-           0%, 100% { transform: translateX(0px); opacity: 0.9; }
-           50% { transform: translateX(200px); opacity: 0.6; }
-         }
-         @keyframes float-diagonal {
-           0%, 100% { transform: translate(0px, 0px); opacity: 0.75; }
-           50% { transform: translate(120px, 30px); opacity: 1.0; }
-         }
-         @keyframes float-wave {
-           0%, 100% { transform: translateX(0px); opacity: 0.65; }
-           33% { transform: translateX(-160px); opacity: 0.9; }
-           66% { transform: translateX(80px); opacity: 1.0; }
-         }
-         @keyframes float-pulse {
-           0%, 100% { transform: scale(1); opacity: 0.8; }
-           50% { transform: scale(1.3); opacity: 0.4; }
-         }
-         #glow-1 { animation: float-slow 8s ease-in-out infinite; }
-         #glow-2 { animation: float-medium 12s ease-in-out infinite; }
-         #glow-3 { animation: float-fast 9s ease-in-out infinite; }
-         #glow-4 { animation: float-diagonal 10s ease-in-out infinite; }
-         #glow-5 { animation: float-wave 14s ease-in-out infinite; }
-       `}
-     </style>
-
-     <svg width="860" height="140" style={{ position: 'absolute', top: 0, left: 0 }}>
-       <defs>
-         <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(110,20,210,0.65)" />
-           <stop offset="45%" stopColor="rgba(80,15,170,0.28)" />
-           <stop offset="70%" stopColor="rgba(80,15,170,0)" />
-         </radialGradient>
-         <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(40,70,255,0.55)" />
-           <stop offset="45%" stopColor="rgba(20,50,200,0.22)" />
-           <stop offset="70%" stopColor="rgba(20,50,200,0)" />
-         </radialGradient>
-         <radialGradient id="g3" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(0,140,255,0.42)" />
-           <stop offset="70%" stopColor="rgba(0,140,255,0)" />
-         </radialGradient>
-         <radialGradient id="g4" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(0,195,235,0.30)" />
-           <stop offset="70%" stopColor="rgba(0,195,235,0)" />
-         </radialGradient>
-         <radialGradient id="g5" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(100,30,210,0.40)" />
-           <stop offset="70%" stopColor="rgba(100,30,210,0)" />
-         </radialGradient>
-       </defs>
-       <ellipse id="glow-1" cx="710" cy="150" rx="210" ry="150" fill="url(#g1)" />
-       <ellipse id="glow-2" cx="550" cy="140" rx="190" ry="140" fill="url(#g2)" />
-       <ellipse id="glow-3" cx="400" cy="130" rx="170" ry="130" fill="url(#g3)" />
-       <ellipse id="glow-4" cx="250" cy="140" rx="150" ry="120" fill="url(#g4)" />
-       <ellipse id="glow-5" cx="100" cy="150" rx="130" ry="110" fill="url(#g5)" />
-     </svg>
-
-     {stats.map(function(s, i) {
-       return (
-         <div key={s.label} style={{
-           flexGrow: 1, display: 'flex', flexDirection: 'column',
-           alignItems: 'center', justifyContent: 'center',
-           padding: '16px 8px',
-           borderRight: i < stats.length - 1 ? '1px solid rgba(255,255,255,0.06)' : 'none',
-           gap: 5,
-         }}>
-           <div style={{ display:'flex', fontSize:30, fontWeight:800, color:s.color, lineHeight:1 }}>
-             {s.value}
-           </div>
-           <div style={{ display:'flex', fontSize:11, color:'rgba(200,195,225,0.45)', fontWeight:600, letterSpacing:'1.5px' }}>
-             {s.label.toUpperCase()}
-           </div>
-         </div>
-       );
-     })}
-   </div>
- );
-})()
-```
-
-```aura width=860 height=200
+```aura width=860 height=240
 (function() {
  var DEVICON = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/';
  var categories = [
@@ -305,108 +140,55 @@
 
  return (
    <div style={{
-     width: '100%', height: '100%',
-     background: '#08080c',
+     width: '100%', height: '100%', background: '#0a0a12',
      display: 'flex', flexDirection: 'column',
-     fontFamily: 'Inter', padding: '18px 32px', gap: 14,
-     borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)',
+     fontFamily: 'Inter, sans-serif', padding: '26px 40px', gap: 18,
+     borderRadius: 20, border: '1px solid rgba(168,85,247,0.14)',
      position: 'relative', overflow: 'hidden',
    }}>
 
-     <style>
-       {`
-         @keyframes float-slow {
-           0%, 100% { transform: translateX(0px); opacity: 0.8; }
-           50% { transform: translateX(350px); opacity: 1.2; }
-         }
-         @keyframes float-medium {
-           0%, 100% { transform: translateX(0px); opacity: 0.7; }
-           50% { transform: translateX(-250px); opacity: 1.1; }
-         }
-         @keyframes float-fast {
-           0%, 100% { transform: translateX(0px); opacity: 0.9; }
-           50% { transform: translateX(200px); opacity: 0.6; }
-         }
-         @keyframes float-diagonal {
-           0%, 100% { transform: translate(0px, 0px); opacity: 0.75; }
-           50% { transform: translate(120px, 30px); opacity: 1.0; }
-         }
-         @keyframes float-wave {
-           0%, 100% { transform: translateX(0px); opacity: 0.65; }
-           33% { transform: translateX(-160px); opacity: 0.9; }
-           66% { transform: translateX(80px); opacity: 1.0; }
-         }
-         @keyframes float-pulse {
-           0%, 100% { transform: scale(1); opacity: 0.8; }
-           50% { transform: scale(1.3); opacity: 0.4; }
-         }
-         #glow-1 { animation: float-slow 9s ease-in-out infinite; }
-         #glow-2 { animation: float-medium 12s ease-in-out infinite; }
-         #glow-3 { animation: float-fast 8s ease-in-out infinite; }
-         #glow-4 { animation: float-diagonal 11s ease-in-out infinite reverse; }
-         #glow-5 { animation: float-wave 14s ease-in-out infinite reverse; }
-         #glow-6 { animation: float-pulse 6s ease-in-out infinite; }
-       `}
-     </style>
+     <style>{`
+       @keyframes ts-orb1 { 0%, 100% { transform: translate(0,0); opacity: 0.45; } 50% { transform: translate(30px,-20px); opacity: 0.7; } }
+       @keyframes ts-orb2 { 0%, 100% { transform: translate(0,0); opacity: 0.4; } 50% { transform: translate(-25px,15px); opacity: 0.65; } }
+       #tso1 { animation: ts-orb1 10s ease-in-out infinite; }
+       #tso2 { animation: ts-orb2 13s ease-in-out infinite 1s; }
+     `}</style>
 
-     <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
+     <svg width="860" height="240" style={{ position: 'absolute', top: 0, left: 0 }}>
        <defs>
-         <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(115,20,215,0.68)" />
-           <stop offset="42%" stopColor="rgba(85,15,175,0.30)" />
-           <stop offset="70%" stopColor="rgba(85,15,175,0)" />
+         <radialGradient id="tsg1" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(139,92,246,0.30)" />
+           <stop offset="100%" stopColor="rgba(139,92,246,0)" />
          </radialGradient>
-         <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(55,55,255,0.55)" />
-           <stop offset="45%" stopColor="rgba(35,45,210,0.22)" />
-           <stop offset="70%" stopColor="rgba(35,45,210,0)" />
-         </radialGradient>
-         <radialGradient id="g3" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(0,130,255,0.42)" />
-           <stop offset="50%" stopColor="rgba(0,100,220,0.16)" />
-           <stop offset="70%" stopColor="rgba(0,100,220,0)" />
-         </radialGradient>
-         <radialGradient id="g4" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(0,185,240,0.32)" />
-           <stop offset="70%" stopColor="rgba(0,185,240,0)" />
-         </radialGradient>
-         <radialGradient id="g5" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(100,25,205,0.42)" />
-           <stop offset="70%" stopColor="rgba(100,25,205,0)" />
-         </radialGradient>
-         <radialGradient id="g6" cx="50%" cy="50%" r="50%">
-           <stop offset="0%" stopColor="rgba(60,80,255,0.35)" />
-           <stop offset="70%" stopColor="rgba(60,80,255,0)" />
+         <radialGradient id="tsg2" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(236,72,153,0.24)" />
+           <stop offset="100%" stopColor="rgba(236,72,153,0)" />
          </radialGradient>
        </defs>
-       <ellipse id="glow-1" cx="170" cy="168" rx="260" ry="170" fill="url(#g1)" />
-       <ellipse id="glow-2" cx="320" cy="178" rx="220" ry="140" fill="url(#g2)" />
-       <ellipse id="glow-3" cx="460" cy="178" rx="190" ry="130" fill="url(#g3)" />
-       <ellipse id="glow-4" cx="590" cy="188" rx="160" ry="110" fill="url(#g4)" />
-       <ellipse id="glow-5" cx="750" cy="188" rx="140" ry="100" fill="url(#g5)" />
-       <ellipse id="glow-6" cx="420" cy="138" rx="100" ry="80" fill="url(#g6)" />
+       <ellipse id="tso1" cx="120" cy="220" rx="220" ry="170" fill="url(#tsg1)" />
+       <ellipse id="tso2" cx="760" cy="30" rx="200" ry="160" fill="url(#tsg2)" />
      </svg>
 
-     <div style={{ display:'flex', fontSize:10, fontWeight:700, color:'rgba(155,140,210,0.5)', letterSpacing:'3px' }}>
+     <span style={{ display:'flex', fontSize:11, fontWeight:700, color:'rgba(216,180,254,0.65)', letterSpacing:'4px', zIndex: 10 }}>
        TECH STACK
-     </div>
-     <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
+     </span>
+
+     <div style={{ display:'flex', flexDirection:'column', gap:16, zIndex: 10 }}>
        {categories.map(function(cat) {
          return (
-           <div key={cat.title} style={{ display:'flex', alignItems:'center', gap:16 }}>
-             <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:80 }}>
+           <div key={cat.title} style={{ display:'flex', flexDirection: 'column', gap:8 }}>
+             <div style={{ display:'flex', fontSize:12, fontWeight:700, color:cat.color, letterSpacing:'0.5px' }}>
                {cat.title.toUpperCase()}
              </div>
-             <div style={{ display:'flex', flexWrap:'wrap', gap:7 }}>
+             <div style={{ display:'flex', flexWrap:'wrap', gap:8 }}>
                {cat.items.map(function(item) {
                  return (
                    <div key={item.name} style={{
-                     display:'flex', alignItems:'center', gap:6, padding:'4px 13px 4px 8px', borderRadius:6,
-                     background:cat.color + '15', border:'1px solid ' + cat.color + '35',
-                     color:'rgba(225,220,255,0.85)', fontSize:12, fontWeight:600,
+                     display:'flex', alignItems:'center', gap:8, padding:'7px 16px 7px 10px', borderRadius:8,
+                     background:cat.color + '14', border:'1px solid ' + cat.color + '38',
                    }}>
-                     <img src={item.icon} width={14} height={14} />
-                     {item.name}
+                     <img src={item.icon} width={17} height={17} />
+                     <span style={{ display: 'flex', color:'rgba(240,238,255,0.92)', fontSize:14, fontWeight:600 }}>{item.name}</span>
                    </div>
                  );
                })}
@@ -420,33 +202,225 @@
 })()
 ```
 
-<br/>
+```aura width=860 height=210
+<div style={{
+  width: '100%', height: '100%', background: '#0a0a12',
+  display: 'flex', fontFamily: 'Inter, sans-serif',
+  position: 'relative', overflow: 'hidden',
+  borderRadius: 20, border: '1px solid rgba(96,165,250,0.14)'
+}}>
 
-## About Me
+  <style>{`
+    @keyframes ab-orb1 { 0%, 100% { transform: translate(0,0); opacity: 0.5; } 50% { transform: translate(25px,-18px); opacity: 0.8; } }
+    @keyframes ab-orb2 { 0%, 100% { transform: translate(0,0); opacity: 0.4; } 50% { transform: translate(-20px,14px); opacity: 0.65; } }
+    #abo1 { animation: ab-orb1 9s ease-in-out infinite; }
+    #abo2 { animation: ab-orb2 11s ease-in-out infinite 1.5s; }
+  `}</style>
 
-I'm **Muhammad Ruhul Jadid**, an Informatics student at UPN "Veteran" Yogyakarta. My main focus is **UI/UX Design** — I design intuitive, accessible interfaces for products in health, education, and social impact — and I also **build what I design**, from mobile apps to cloud-deployed web systems.
+  <svg width="860" height="210" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="abg1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(236,72,153,0.32)" />
+        <stop offset="100%" stopColor="rgba(236,72,153,0)" />
+      </radialGradient>
+      <radialGradient id="abg2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(139,92,246,0.32)" />
+        <stop offset="100%" stopColor="rgba(139,92,246,0)" />
+      </radialGradient>
+    </defs>
+    <ellipse id="abo1" cx="70" cy="180" rx="200" ry="150" fill="url(#abg1)" />
+    <ellipse id="abo2" cx="790" cy="40" rx="190" ry="150" fill="url(#abg2)" />
+  </svg>
 
-<br/>
+  <div style={{
+    position: 'relative', display: 'flex', flexDirection: 'column',
+    justifyContent: 'center', padding: '0 48px', zIndex: 10, gap: 12, flex: 1
+  }}>
+    <span style={{
+      fontSize: 11, letterSpacing: 4, textTransform: 'uppercase',
+      color: 'rgba(147,197,253,0.75)', fontWeight: 700
+    }}>About</span>
 
-## 🏆 Notable Achievements
+    <span style={{ fontSize: 21, fontWeight: 700, color: '#ffffff', lineHeight: 1.35 }}>
+      I design intuitive interfaces, then build them into working products.
+    </span>
 
-- 🥇 **1st Winner** — HackfestUC International UI/UX Competition
-- 🥇 **1st Winner** — Proto-A-Thon International Design Competition @BINUS *(100+ teams, 10 countries)*
-- 🥉 **3rd Winner** — UX Design @ GEMASTIK XVIII 2025 *(430+ teams, 100+ universities)*
-- 🥉 **3rd Winner** — Hackathon ElevAIte Indonesia Hub UGM *(400+ teams)*
+    <span style={{ fontSize: 14, color: 'rgba(225,222,245,0.72)', lineHeight: 1.6, maxWidth: 720 }}>
+      Informatics student at UPN "Veteran" Yogyakarta. My main focus is UI/UX Design — for products in health, education, and social impact — and I also build what I design, from mobile apps to cloud-deployed systems.
+    </span>
 
-<br/>
+    <span style={{ fontSize: 13, color: 'rgba(196,181,253,0.65)', fontWeight: 500, marginTop: 4 }}>
+      Head of UI/UX Design @ IT Club UPNVYK · UX Mentor for GEMASTIK & national design competitions
+    </span>
+  </div>
+</div>
+```
 
-## Featured Projects
+```aura width=860 height=270
+<div style={{
+  width: '100%', height: '100%', background: '#0a0a12',
+  display: 'flex', flexDirection: 'column', alignItems: 'center',
+  fontFamily: 'Inter, sans-serif', position: 'relative', overflow: 'hidden',
+  borderRadius: 20, border: '1px solid rgba(236,72,153,0.14)', padding: '24px 0'
+}}>
 
-| Project | Description | Stack |
-|---|---|---|
-| **[Sipupuk-Cloud-Distribution-System](https://github.com/mruhulj/Sipupuk-Cloud-Distribution-System)** | Cloud fertilizer distribution platform — Auth Service, Core API, Deployment | Node.js, GCP, MySQL |
-| **[LoveLock-Kriptografi](https://github.com/mruhulj/LoveLock-Kriptografi)** | Encryption app: Scrypt, AES, ChaCha20, LSB steganography | Python, Streamlit |
-| **[Data-Science-Student-Clustering](https://github.com/mruhulj/Data-Science-Student-Clustering)** | K-Means/K-Medoids clustering on student performance data | Python, Scikit-learn |
-| **[Grafika-Komputer-Paint-Tool](https://github.com/mruhulj/Grafika-Komputer-Paint-Tool)** | 2D geometric transformation paint tool | Python, Tkinter |
+  <style>{`
+    @keyframes ac-orb1 { 0%, 100% { transform: translate(0,0); opacity: 0.4; } 50% { transform: translate(30px,-20px); opacity: 0.65; } }
+    @keyframes ac-orb2 { 0%, 100% { transform: translate(0,0); opacity: 0.35; } 50% { transform: translate(-25px,18px); opacity: 0.6; } }
+    #aco1 { animation: ac-orb1 10s ease-in-out infinite; }
+    #aco2 { animation: ac-orb2 12s ease-in-out infinite 1s; }
+  `}</style>
+
+  <svg width="860" height="270" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="acg1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(236,72,153,0.22)" />
+        <stop offset="100%" stopColor="rgba(236,72,153,0)" />
+      </radialGradient>
+      <radialGradient id="acg2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(139,92,246,0.22)" />
+        <stop offset="100%" stopColor="rgba(139,92,246,0)" />
+      </radialGradient>
+    </defs>
+    <ellipse id="aco1" cx="90" cy="230" rx="220" ry="170" fill="url(#acg1)" />
+    <ellipse id="aco2" cx="770" cy="40" rx="200" ry="160" fill="url(#acg2)" />
+  </svg>
+
+  <span style={{ display:'flex', fontSize:11, fontWeight:700, letterSpacing:4, textTransform:'uppercase',
+    color:'rgba(249,168,212,0.75)', marginBottom:18, zIndex:10 }}>Notable Achievements</span>
+
+  <div style={{ display:'flex', flexDirection:'column', gap:9, zIndex:10, width:'100%', padding:'0 32px' }}>
+    {[
+      { badge: '🥇', place: '1st Winner', desc: 'HackfestUC International UI/UX Competition', color: '236,72,153' },
+      { badge: '🥇', place: '1st Winner', desc: 'Proto-A-Thon International Design Competition @BINUS · 100+ teams, 10 countries', color: '236,72,153' },
+      { badge: '🥉', place: '3rd Winner', desc: 'UX Design @ GEMASTIK XVIII 2025 · 430+ teams, 100+ universities', color: '139,92,246' },
+      { badge: '🥉', place: '3rd Winner', desc: 'Hackathon ElevAIte Indonesia Hub UGM · 400+ teams', color: '139,92,246' },
+      { badge: '🏅', place: 'Top 9 Finalist', desc: 'UXVidia @ Arkavidia 9.0 ITB', color: '96,165,250' },
+    ].map(function(item, i) {
+      return (
+        <div key={i} style={{
+          display: 'flex', alignItems: 'center', padding: '13px 20px',
+          background: 'rgba(255,255,255,0.025)',
+          border: '1px solid rgba(' + item.color + ',0.20)',
+          borderRadius: 12, gap: 14
+        }}>
+          <span style={{ display: 'flex', fontSize: 18 }}>{item.badge}</span>
+          <span style={{ display: 'flex', fontSize: 14, fontWeight: 700, color: '#ffffff', flexShrink: 0, width: 118 }}>
+            {item.place}
+          </span>
+          <span style={{ display: 'flex', fontSize: 13, color: 'rgba(225,222,245,0.68)', lineHeight: 1.4 }}>
+            {item.desc}
+          </span>
+        </div>
+      );
+    })}
+  </div>
+</div>
+```
+
+```aura width=860 height=290
+<div style={{
+  width: '100%', height: '100%', background: '#0a0a12',
+  display: 'flex', flexDirection: 'column', alignItems: 'center',
+  fontFamily: 'Inter, sans-serif', position: 'relative', overflow: 'hidden',
+  borderRadius: 20, border: '1px solid rgba(96,165,250,0.14)', padding: '24px 0'
+}}>
+
+  <style>{`
+    @keyframes pj-orb1 { 0%, 100% { transform: translate(0,0); opacity: 0.35; } 50% { transform: translate(35px,-25px); opacity: 0.6; } }
+    @keyframes pj-orb2 { 0%, 100% { transform: translate(0,0); opacity: 0.3; } 50% { transform: translate(-30px,20px); opacity: 0.55; } }
+    #pjo1 { animation: pj-orb1 10s ease-in-out infinite; }
+    #pjo2 { animation: pj-orb2 13s ease-in-out infinite 1s; }
+  `}</style>
+
+  <svg width="860" height="290" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="pjg1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(96,165,250,0.22)" />
+        <stop offset="100%" stopColor="rgba(96,165,250,0)" />
+      </radialGradient>
+      <radialGradient id="pjg2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(139,92,246,0.22)" />
+        <stop offset="100%" stopColor="rgba(139,92,246,0)" />
+      </radialGradient>
+    </defs>
+    <ellipse id="pjo1" cx="100" cy="250" rx="220" ry="180" fill="url(#pjg1)" />
+    <ellipse id="pjo2" cx="760" cy="40" rx="200" ry="160" fill="url(#pjg2)" />
+  </svg>
+
+  <span style={{ display:'flex', fontSize:11, fontWeight:700, letterSpacing:4, textTransform:'uppercase',
+    color:'rgba(147,197,253,0.75)', marginBottom:18, zIndex:10 }}>Featured Projects</span>
+
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 10, zIndex: 10, width: '100%', padding: '0 28px' }}>
+    {[
+      { title: 'Sipupuk — Cloud Distribution System', desc: 'Subsidized fertilizer distribution platform — Auth Service, Core API, Deployment', tech: 'Node.js · GCP · MySQL', color: '96,165,250' },
+      { title: 'LoveLock — Encryption App', desc: 'Encrypted messaging app: Scrypt, AES, ChaCha20, LSB steganography', tech: 'Python · Streamlit', color: '236,72,153' },
+      { title: 'Student Performance Clustering', desc: 'K-Means/K-Medoids clustering analysis to guide academic intervention', tech: 'Python · Scikit-learn', color: '139,92,246' },
+      { title: 'Grafika Komputer — Paint Tool', desc: '2D geometric transformation paint tool (translation, scale, rotation, shear)', tech: 'Python · Tkinter', color: '167,139,250' },
+    ].map(function(project, i) {
+      return (
+        <div key={i} style={{
+          display: 'flex', alignItems: 'center', padding: '15px 22px',
+          background: 'rgba(255,255,255,0.025)',
+          border: '1px solid rgba(' + project.color + ',0.20)',
+          borderRadius: 12, gap: 16
+        }}>
+          <div style={{
+            width: 9, height: 9, borderRadius: 5, flexShrink: 0,
+            background: 'rgba(' + project.color + ',0.9)',
+            boxShadow: '0 0 10px rgba(' + project.color + ',0.5)'
+          }} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 4, flex: 1 }}>
+            <span style={{ display: 'flex', fontSize: 15, fontWeight: 700, color: '#ffffff' }}>
+              {project.title}
+            </span>
+            <span style={{ display: 'flex', fontSize: 12, color: 'rgba(225,222,245,0.62)', lineHeight: 1.4 }}>
+              {project.desc}
+            </span>
+          </div>
+          <span style={{
+            display: 'flex', fontSize: 11, color: 'rgba(' + project.color + ',0.85)',
+            fontWeight: 600, letterSpacing: 0.2, textAlign: 'right', flexShrink: 0, maxWidth: 160
+          }}>{project.tech}</span>
+        </div>
+      );
+    })}
+  </div>
+</div>
+```
 
 <div align="center"><sub><a href="https://github.com/mruhulj?tab=repositories">View all repositories →</a></sub></div>
+
+```aura width=860 height=90
+<div style={{
+  width: '100%', height: '100%', background: '#0a0a12',
+  display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+  fontFamily: 'Inter, sans-serif', position: 'relative', overflow: 'hidden',
+  borderRadius: 20, border: '1px solid rgba(168,85,247,0.10)'
+}}>
+
+  <svg width="860" height="90" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="ftg1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(139,92,246,0.22)" />
+        <stop offset="100%" stopColor="rgba(139,92,246,0)" />
+      </radialGradient>
+    </defs>
+    <ellipse cx="430" cy="45" rx="320" ry="65" fill="url(#ftg1)" />
+  </svg>
+
+  <div style={{ display: 'flex', alignItems: 'center', gap: 8, zIndex: 10 }}>
+    <div style={{ width: 5, height: 5, borderRadius: 3, background: 'rgba(236,72,153,0.7)' }} />
+    <div style={{ width: 5, height: 5, borderRadius: 3, background: 'rgba(168,85,247,0.7)' }} />
+    <div style={{ width: 5, height: 5, borderRadius: 3, background: 'rgba(96,165,250,0.7)' }} />
+  </div>
+
+  <span style={{
+    fontSize: 12, color: 'rgba(230,225,255,0.55)', letterSpacing: 2,
+    fontWeight: 500, marginTop: 10, zIndex: 10
+  }}>Muhammad Ruhul Jadid · open to design & dev collaborations</span>
+</div>
+```
 
 <br>
 <p align="center"><sub>𝗉𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 <a href="https://github.com/collectioneur/readme-aura">𝗋𝖾𝖺𝖽𝗆𝖾-𝖺𝗎𝗋𝖺</a></sub></p>
