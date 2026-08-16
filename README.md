@@ -20,7 +20,6 @@ I'm **Muhammad Ruhul Jadid**, an Informatics student at UPN "Veteran" Yogyakarta
 
 I've led and contributed to product design initiatives across NGOs and institutional clients, collaborating closely with frontend, backend, and research teams. I bring the same user-centered thinking to the code I write.
 
-Currently applying to **Apple Developer Academy Cohort 2027**.
 
 <br/>
 
