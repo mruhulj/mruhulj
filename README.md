@@ -21,10 +21,6 @@ Multiple international.
 - 🌍 **1st Winner** Proto-A-Thon International Design Competition @BINUS (100+ teams, 10 countries)
 - 🇮🇩 **3rd Winner** UX Design @ GEMASTIK XVIII 2025 (430+ teams, 100+ universities)
 - 🇮🇩 **3rd Winner** Hackathon ElevAIte Indonesia Hub UGM (400+ teams)
-- 🇮🇩 **Top 9 Finalist** UXVidia @ Arkavidia 9.0 ITB
-- 🇮🇩 **Best Video Award & Top 7 Finalist** UX Competition @ FindIT! UGM 2025
-- 🇮🇩 **Top 6 Finalist** UI/UX Competition @ Hology 8.0 UB
-- 🇮🇩 **Top 5 Finalist** UI/UX Competition @ Invention Udayana
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
