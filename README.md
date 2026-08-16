@@ -6,8 +6,6 @@ UI/UX Designer with an Informatics background — I design user-centered product
 Multiple international.
 </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mruhulj" alt="mruhulj" /></a> </p>
-
 - 🎨 Main focus: **UI/UX Design** — Figma, design systems, user research, prototyping
 - 💻 Also build what I design — mobile, web, and cloud development
 - 🧑‍🏫 Head of UI/UX Design @ Information Technology Club UPNVYK
@@ -40,10 +38,6 @@ Multiple international.
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white)
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mruhulj&show_icons=true&locale=en&layout=compact" alt="mruhulj" /></p>
-
-<br clear="left"/>
 
 ## Featured Development Projects
 
