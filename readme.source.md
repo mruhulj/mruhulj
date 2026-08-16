@@ -244,18 +244,18 @@
       I design intuitive interfaces, then build them into working products.
     </span>
 
-    <span style={{ fontSize: 14, color: 'rgba(225,222,245,0.72)', lineHeight: 1.6, maxWidth: 720 }}>
+    <span style={{ fontSize: 16, color: 'rgba(225,222,245,0.78)', lineHeight: 1.6, maxWidth: 740 }}>
       Informatics student at UPN "Veteran" Yogyakarta. My main focus is UI/UX Design — for products in health, education, and social impact — and I also build what I design, from mobile apps to cloud-deployed systems.
     </span>
 
-    <span style={{ fontSize: 13, color: 'rgba(196,181,253,0.65)', fontWeight: 500, marginTop: 4 }}>
+    <span style={{ fontSize: 15, color: 'rgba(196,181,253,0.72)', fontWeight: 500, marginTop: 4 }}>
       Head of UI/UX Design @ IT Club UPNVYK · UX Mentor for GEMASTIK & national design competitions
     </span>
   </div>
 </div>
 ```
 
-```aura width=860 height=390
+```aura width=860 height=410
 <div style={{
   width: '100%', height: '100%', background: '#0a0a12',
   display: 'flex', flexDirection: 'column', alignItems: 'center',
@@ -270,7 +270,7 @@
     #aco2 { animation: ac-orb2 12s ease-in-out infinite 1s; }
   `}</style>
 
-  <svg width="860" height="390" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="410" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
       <radialGradient id="acg1" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stopColor="rgba(236,72,153,0.22)" />
@@ -281,7 +281,7 @@
         <stop offset="100%" stopColor="rgba(139,92,246,0)" />
       </radialGradient>
     </defs>
-    <ellipse id="aco1" cx="90" cy="340" rx="220" ry="170" fill="url(#acg1)" />
+    <ellipse id="aco1" cx="90" cy="360" rx="220" ry="170" fill="url(#acg1)" />
     <ellipse id="aco2" cx="770" cy="40" rx="200" ry="160" fill="url(#acg2)" />
   </svg>
 
@@ -303,11 +303,11 @@
           border: '1px solid rgba(' + item.color + ',0.20)',
           borderRadius: 12, gap: 14
         }}>
-          <span style={{ display: 'flex', fontSize: 18 }}>{item.badge}</span>
-          <span style={{ display: 'flex', fontSize: 14, fontWeight: 700, color: '#ffffff', flexShrink: 0, width: 118 }}>
+          <span style={{ display: 'flex', fontSize: 19 }}>{item.badge}</span>
+          <span style={{ display: 'flex', fontSize: 16, fontWeight: 700, color: '#ffffff', flexShrink: 0, width: 130 }}>
             {item.place}
           </span>
-          <span style={{ display: 'flex', fontSize: 13, color: 'rgba(225,222,245,0.68)', lineHeight: 1.4 }}>
+          <span style={{ display: 'flex', fontSize: 15, color: 'rgba(225,222,245,0.75)', lineHeight: 1.4 }}>
             {item.desc}
           </span>
         </div>
@@ -317,7 +317,7 @@
 </div>
 ```
 
-```aura width=860 height=420
+```aura width=860 height=450
 <div style={{
   width: '100%', height: '100%', background: '#0a0a12',
   display: 'flex', flexDirection: 'column', alignItems: 'center',
@@ -332,7 +332,7 @@
     #pjo2 { animation: pj-orb2 13s ease-in-out infinite 1s; }
   `}</style>
 
-  <svg width="860" height="420" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="450" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
       <radialGradient id="pjg1" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stopColor="rgba(96,165,250,0.22)" />
@@ -343,7 +343,7 @@
         <stop offset="100%" stopColor="rgba(139,92,246,0)" />
       </radialGradient>
     </defs>
-    <ellipse id="pjo1" cx="100" cy="380" rx="220" ry="180" fill="url(#pjg1)" />
+    <ellipse id="pjo1" cx="100" cy="410" rx="220" ry="180" fill="url(#pjg1)" />
     <ellipse id="pjo2" cx="760" cy="40" rx="200" ry="160" fill="url(#pjg2)" />
   </svg>
 
@@ -369,17 +369,17 @@
             background: 'rgba(' + project.color + ',0.9)',
             boxShadow: '0 0 10px rgba(' + project.color + ',0.5)'
           }} />
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 4, flex: 1 }}>
-            <span style={{ display: 'flex', fontSize: 15, fontWeight: 700, color: '#ffffff' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 5, flex: 1 }}>
+            <span style={{ display: 'flex', fontSize: 17, fontWeight: 700, color: '#ffffff' }}>
               {project.title}
             </span>
-            <span style={{ display: 'flex', fontSize: 12, color: 'rgba(225,222,245,0.62)', lineHeight: 1.4 }}>
+            <span style={{ display: 'flex', fontSize: 14, color: 'rgba(225,222,245,0.68)', lineHeight: 1.4 }}>
               {project.desc}
             </span>
           </div>
           <span style={{
-            display: 'flex', fontSize: 11, color: 'rgba(' + project.color + ',0.85)',
-            fontWeight: 600, letterSpacing: 0.2, textAlign: 'right', flexShrink: 0, maxWidth: 160
+            display: 'flex', fontSize: 12, color: 'rgba(' + project.color + ',0.9)',
+            fontWeight: 600, letterSpacing: 0.2, textAlign: 'right', flexShrink: 0, maxWidth: 170
           }}>{project.tech}</span>
         </div>
       );
@@ -420,6 +420,3 @@
   }}>Muhammad Ruhul Jadid · open to design & dev collaborations</span>
 </div>
 ```
-
-<br>
-<p align="center"><sub>𝗉𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 <a href="https://github.com/collectioneur/readme-aura">𝗋𝖾𝖺𝖽𝗆𝖾-𝖺𝗎𝗋𝖺</a></sub></p>
