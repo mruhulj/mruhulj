@@ -1,20 +1,56 @@
-# Hi, I'm Ruhul 👋
+<h1 align="center">Hi 👋, I'm Ruhul</h1>
+<h3 align="center">UI/UX Designer with a developer's mind</h3>
 
-Informatics student at UPN "Veteran" Yogyakarta, building across mobile, web, and cloud. Currently applying to Apple Developer Academy Cohort 2027.
+<p align="center">
+UI/UX Designer with an Informatics background — I design user-centered products and can build them too.<br/>
+Multiple international & national UI/UX competition winner. Currently applying to Apple Developer Academy Cohort 2027.
+</p>
 
-## Tech Stack
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mruhulj" alt="mruhulj" /></a> </p>
 
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=googlecloud&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white)
+- 🎨 Main focus: **UI/UX Design** — Figma, design systems, user research, prototyping
+- 💻 Also build what I design — mobile, web, and cloud development
+- 🧑‍🏫 Head of UI/UX Design @ Information Technology Club UPNVYK
+- 🧑‍🎓 UX Design Mentor for GEMASTIK & national design competitions
+- 👨‍💻 All of my design work is available at [mruhulj.carrd.co](https://mruhulj.carrd.co)
+- 📫 Reach me at **mruhulj@gmail.com**
 
-## Featured Projects
+### 🏆 Notable Achievements
+
+- 🌍 **1st Winner** @ HackfestUC International UI/UX Competition
+- 🌍 **1st Winner** Proto-A-Thon International Design Competition @BINUS (100+ teams, 10 countries)
+- 🇮🇩 **3rd Winner** UX Design @ GEMASTIK XVIII 2025 (430+ teams, 100+ universities)
+- 🇮🇩 **3rd Winner** Hackathon ElevAIte Indonesia Hub UGM (400+ teams)
+- 🇮🇩 **Top 9 Finalist** UXVidia @ Arkavidia 9.0 ITB
+- 🇮🇩 **Best Video Award & Top 7 Finalist** UX Competition @ FindIT! UGM 2025
+- 🇮🇩 **Top 6 Finalist** UI/UX Competition @ Hology 8.0 UB
+- 🇮🇩 **Top 5 Finalist** UI/UX Competition @ Invention Udayana
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/mruhulj" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="mruhulj" height="30" width="40" /></a>
+</p>
+
+### Design & Development Tools
+
+<p align="left">
+<a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="figma" width="40" height="40"/></a>
+<a href="https://www.adobe.com/products/aftereffects.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/aftereffects/aftereffects-original.svg" alt="aftereffects" width="40" height="40"/></a>
+<a href="https://flutter.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" alt="flutter" width="40" height="40"/></a>
+<a href="https://www.java.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/></a>
+<a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a>
+<a href="https://nodejs.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a>
+<a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/></a>
+<a href="https://cloud.google.com" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/></a>
+<a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/></a>
+<a href="https://isocpp.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cpp" width="40" height="40"/></a>
+</p>
+
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mruhulj&show_icons=true&locale=en&layout=compact" alt="mruhulj" /></p>
+
+<br clear="left"/>
+
+## Featured Development Projects
 
 ### ☁️ Cloud Computing
 - **[Sipupuk-Cloud-Distribution-System](https://github.com/mruhulj/Sipupuk-Cloud-Distribution-System)** — Final project: subsidized fertilizer distribution system on Google Cloud Run, GCE, and Firestore. My role: Auth Service, Core API, and deployment.
@@ -52,7 +88,3 @@ Projects where I contributed as part of a team, hosted on teammates' repositorie
 - **[Grafika-Komputer](https://github.com/aulianhrn/Grafika-Komputer)** — verified contributor.
 - **[Project-PrakSCPK-AHP](https://github.com/Maan-py/Project-PrakSCPK-AHP)** — AHP decision support system, Sistem Cerdas dan Pendukung Keputusan.
 - **Sistem Anti-Maling Kendaraan** (IoT) — 4-layer IoT vehicle anti-theft system, documented in official architecture report.
-
-## Contact
-
-📧 mruhulj@gmail.com
