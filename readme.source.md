@@ -54,7 +54,7 @@
     </span>
 
     <div style={{ display: 'flex', gap: 10, marginTop: 22, flexWrap: 'wrap', justifyContent: 'center' }}>
-      {['UI/UX Design', 'Figma', 'Flutter', 'Cloud'].map(function(tag, i) {
+      {['UI/UX Design', 'Web', 'Mobile', 'Computer Network'].map(function(tag, i) {
         return (
           <span key={i} style={{
             padding: '6px 16px', borderRadius: 100,
